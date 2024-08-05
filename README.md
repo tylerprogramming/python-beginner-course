@@ -103,3 +103,10 @@ Code Example:
 ## Simple Project to Tie Everything Together
 
 ### Let's create a simple contact book application that allows you to add, view, and delete contacts.
+
+
+# 1. Introduction to Databases
+## Explanation:
+### A database is a structured collection of data. SQL (Structured Query Language) is used to manage and manipulate relational databases. SQLite is a lightweight, disk-based database that doesn't require a separate server process, making it ideal for embedding in applications. SQLAlchemy is a Python SQL toolkit and Object-Relational Mapping (ORM) library that provides a flexible interface for interacting with databases.
+## Sqlite:
+### SQLite is part of the Python standard library, so no installation is required. You can interact with SQLite using the sqlite3 module.
