@@ -1,39 +1,51 @@
-
-What is Python?
-Python is a high-level, interpreted programming language known for its readability and simplicity. It's widely used for web development, data analysis, artificial intelligence, scientific computing, and automation.
-
-Installing Python
-To install Python, follow these steps:
-
-Go to the official Python website.
-Download the latest version for your operating system.
-Run the installer and follow the instructions. Make sure to check the box that says "Add Python to PATH".
-Setting up a Development Environment
-You can write Python code in various environments. A popular choice for beginners is an Integrated Development Environment (IDE) like PyCharm, VSCode, or using a simple text editor like Sublime Text. Additionally, Jupyter Notebooks are excellent for data analysis and visualization.
-
-Example of setting up VSCode:
-
-Install Visual Studio Code.
-Install the Python extension from the VSCode marketplace.
-Open VSCode and create a new file with a .py extension.
-Write your Python code and run it by pressing Ctrl+Shift+B.
 # Python Beginner's Tutorial
 
 Welcome to the Python Beginner's Tutorial! This guide will take you from the basics of Python programming to working with databases. Here's a breakdown of what you'll learn:
 
+### Lesson files
+
+The folder numbers do not match the section numbers below (two folders share `06`). Use this map:
+
+| Section | Folder / file |
+|---|---|
+| 4. Variables and Data Types | `01 - variables and data types/main.py` |
+| 4. Basic Operations | `02 - basic operations/main.py` |
+| 4. Strings | `03 - strings/main.py` |
+| 5. Control Flow | `04 - conditional statements/ifelse.py`, `loops.py` |
+| 6. Lists | `05 - lists/lists.py` |
+| 6. Tuples, Dictionaries | `06 - tuples/tuples.py`, `dictionary.py` |
+| 6. Sets | no lesson file yet |
+| 7. Functions | `06 - functions/def.py` |
+| 8. Modules and Packages | `07 - modules and packages/modpack.py` |
+| 9. File Handling | `08 - file handling/file.py` |
+| 10. Exception Handling | `09 - exception handling/exception.py` |
+| 11. OOP | `10 - OOP/oop.py` |
+| 12. Databases (SQLite) | `12 - sqlite/main.py` |
+| 13. Project (contact book) | `11 - project/main.py` |
+
+Every lesson uses only the standard library (the optional SQLAlchemy snippet in section 12 needs `pip install sqlalchemy`).
+
 ## 1. Introduction
-Learn what Python is and why it's a popular programming language. Understand the key features that make Python a great choice for beginners and professionals alike.
+Python is a high-level, interpreted programming language known for its readability and simplicity. It's widely used for web development, data analysis, artificial intelligence, scientific computing, and automation.
 ```python
 print("Hello, World!")
 ```
 
-
-
 ## 2. Installing Python
-Instructions on how to install Python on your machine, including setting up the Python environment and verifying the installation.
+1. Download the latest version for your operating system from [python.org](https://www.python.org/downloads/).
+2. Run the installer. On Windows, check "Add Python to PATH".
+3. Verify the installation with `python3 --version` (or `python --version` on Windows).
 
 ## 3. Setting Up a Development Environment
-Set up a development environment using a code editor or IDE like VS Code or PyCharm. Learn how to configure the environment to write and run Python code efficiently.
+Use a code editor or IDE such as VS Code or PyCharm. For VS Code:
+
+1. Install [Visual Studio Code](https://code.visualstudio.com/).
+2. Install the Python extension from the VS Code marketplace.
+3. Open this folder and run any lesson file with the Run button, or from a terminal:
+
+```bash
+python3 "01 - variables and data types/main.py"
+```
 
 ## 4. Basic Syntax and Operations
 
@@ -205,11 +217,11 @@ conn.close()
 ```
 
 ### Using SQLAlchemy
-Use SQLAlchemy ORM to interact with databases.
+Use SQLAlchemy ORM to interact with databases. This part has no lesson file (`12 - sqlite/main.py` covers `sqlite3` only), and SQLAlchemy is a third-party package: `pip install sqlalchemy`.
 
 ```python
 from sqlalchemy import create_engine, Column, Integer, String
-from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import declarative_base
 
 engine = create_engine('sqlite:///example.db')
 Base = declarative_base()
