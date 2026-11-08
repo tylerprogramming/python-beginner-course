@@ -2,6 +2,29 @@
 
 Welcome to the Python Beginner's Tutorial! This guide will take you from the basics of Python programming to working with databases. Here's a breakdown of what you'll learn:
 
+### Lesson files
+
+The folder numbers do not match the section numbers below (two folders share `06`). Use this map:
+
+| Section | Folder / file |
+|---|---|
+| 4. Variables and Data Types | `01 - variables and data types/main.py` |
+| 4. Basic Operations | `02 - basic operations/main.py` |
+| 4. Strings | `03 - strings/main.py` |
+| 5. Control Flow | `04 - conditional statements/ifelse.py`, `loops.py` |
+| 6. Lists | `05 - lists/lists.py` |
+| 6. Tuples, Dictionaries | `06 - tuples/tuples.py`, `dictionary.py` |
+| 6. Sets | no lesson file yet |
+| 7. Functions | `06 - functions/def.py` |
+| 8. Modules and Packages | `07 - modules and packages/modpack.py` |
+| 9. File Handling | `08 - file handling/file.py` |
+| 10. Exception Handling | `09 - exception handling/exception.py` |
+| 11. OOP | `10 - OOP/oop.py` |
+| 12. Databases (SQLite) | `12 - sqlite/main.py` |
+| 13. Project (contact book) | `11 - project/main.py` |
+
+Every lesson uses only the standard library.
+
 ## 1. Introduction
 Python is a high-level, interpreted programming language known for its readability and simplicity. It's widely used for web development, data analysis, artificial intelligence, scientific computing, and automation.
 ```python
