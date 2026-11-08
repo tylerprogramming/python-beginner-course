@@ -1,39 +1,28 @@
-
-What is Python?
-Python is a high-level, interpreted programming language known for its readability and simplicity. It's widely used for web development, data analysis, artificial intelligence, scientific computing, and automation.
-
-Installing Python
-To install Python, follow these steps:
-
-Go to the official Python website.
-Download the latest version for your operating system.
-Run the installer and follow the instructions. Make sure to check the box that says "Add Python to PATH".
-Setting up a Development Environment
-You can write Python code in various environments. A popular choice for beginners is an Integrated Development Environment (IDE) like PyCharm, VSCode, or using a simple text editor like Sublime Text. Additionally, Jupyter Notebooks are excellent for data analysis and visualization.
-
-Example of setting up VSCode:
-
-Install Visual Studio Code.
-Install the Python extension from the VSCode marketplace.
-Open VSCode and create a new file with a .py extension.
-Write your Python code and run it by pressing Ctrl+Shift+B.
 # Python Beginner's Tutorial
 
 Welcome to the Python Beginner's Tutorial! This guide will take you from the basics of Python programming to working with databases. Here's a breakdown of what you'll learn:
 
 ## 1. Introduction
-Learn what Python is and why it's a popular programming language. Understand the key features that make Python a great choice for beginners and professionals alike.
+Python is a high-level, interpreted programming language known for its readability and simplicity. It's widely used for web development, data analysis, artificial intelligence, scientific computing, and automation.
 ```python
 print("Hello, World!")
 ```
 
-
-
 ## 2. Installing Python
-Instructions on how to install Python on your machine, including setting up the Python environment and verifying the installation.
+1. Download the latest version for your operating system from [python.org](https://www.python.org/downloads/).
+2. Run the installer. On Windows, check "Add Python to PATH".
+3. Verify the installation with `python3 --version` (or `python --version` on Windows).
 
 ## 3. Setting Up a Development Environment
-Set up a development environment using a code editor or IDE like VS Code or PyCharm. Learn how to configure the environment to write and run Python code efficiently.
+Use a code editor or IDE such as VS Code or PyCharm. For VS Code:
+
+1. Install [Visual Studio Code](https://code.visualstudio.com/).
+2. Install the Python extension from the VS Code marketplace.
+3. Open this folder and run any lesson file with the Run button, or from a terminal:
+
+```bash
+python3 "01 - variables and data types/main.py"
+```
 
 ## 4. Basic Syntax and Operations
 
