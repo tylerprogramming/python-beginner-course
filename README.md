@@ -23,7 +23,7 @@ The folder numbers do not match the section numbers below (two folders share `06
 | 12. Databases (SQLite) | `12 - sqlite/main.py` |
 | 13. Project (contact book) | `11 - project/main.py` |
 
-Every lesson uses only the standard library.
+Every lesson uses only the standard library (the optional SQLAlchemy snippet in section 12 needs `pip install sqlalchemy`).
 
 ## 1. Introduction
 Python is a high-level, interpreted programming language known for its readability and simplicity. It's widely used for web development, data analysis, artificial intelligence, scientific computing, and automation.
@@ -217,11 +217,11 @@ conn.close()
 ```
 
 ### Using SQLAlchemy
-Use SQLAlchemy ORM to interact with databases.
+Use SQLAlchemy ORM to interact with databases. This part has no lesson file (`12 - sqlite/main.py` covers `sqlite3` only), and SQLAlchemy is a third-party package: `pip install sqlalchemy`.
 
 ```python
 from sqlalchemy import create_engine, Column, Integer, String
-from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import declarative_base
 
 engine = create_engine('sqlite:///example.db')
 Base = declarative_base()
